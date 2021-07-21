@@ -1,0 +1,16 @@
+要真正的分布式，pytorch官方文档上有分布式的教程，那个可以在多个gpu或多个机器上跑的，上面那个dgl教程也有分布式。
+不用pytroch框架的话，可选择单进程上分成多个客户端串行跑的，进一步的话就是可以分成多个进程，进程间用网络http通信，把要传的参数用json序列化它。
+-单进程：
+tf版本fed（一位师兄的代码）：https://github.com/Zing22/tf-fed-demo
+pytorch版本fed（另一位同学的代码）：https://github.com/iammcy/Fed-Learning
+-多进程：
+tf版本（这个是结合区块链的，启用多进程，其实就是用multiprocessing库而已）：https://github.com/iammcy/BFLC-demo/blob/main/python-sdk/main.py
+pytorch版本的：上面单进程的，可修改为多进程
+-联邦框架：
+tensorflow官方有fed的框架
+微众的fate框架
+-分布式版本的：
+pytorch分布式教程：https://pytorch.org/tutorials/beginner/dist_overview.html
+dgl分布式：https://docs.dgl.ai/guide/distributed.html（同torch框架）
+fed论文（FedProx，作者litian）分布式：https://github.com/litian96/FedProx
+总结：一般联邦论文的开源代码大多是串行单进程模型的，或者直接使用pytorch分布式的。主要还是数据集的划分和模型传输
