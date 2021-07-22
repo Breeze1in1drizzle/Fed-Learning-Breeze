@@ -17,8 +17,8 @@ batch_size = 64             # batch size
 Epoch = 30                  # number of training epochs
 
 # init the roles of FL
-# model = CNNModel()          # convolutional neural network
-model = LinearModel()       # linear regression
+model = CNNModel()          # convolutional neural network
+# model = LinearModel()       # linear regression
 server = Server(model)      # Parameter Server (PS) architecture
 clients = []                # Clients, or "Workers"
 
