@@ -1,5 +1,6 @@
+import torch
 from torch import nn
-import torch.nn.functional as F
+import torch.nn.functional as func
 
 
 class LinearModel(nn.Module):
@@ -7,6 +8,7 @@ class LinearModel(nn.Module):
     def __init__(self) -> None:
         super(LinearModel, self).__init__()
         self.flatten = nn.Flatten()
+        # self.flatten = torch
         self.linear_relu_stack = nn.Sequential(
             nn.Linear(28*28, 512),
             nn.ReLU(),
@@ -45,8 +47,21 @@ class CNNModel(nn.Module):
     def forward(self, x):
         x = self.features(x)
         x = x.view(-1, 128*7*7)
-        logits = self.dense3(self.drop2(F.relu(self.dense2(self.drop1(F.relu(self.dense1(x)))))))
+        logits = self.dense3(
+            self.drop2(
+                func.relu(
+                    self.dense2(
+                        self.drop1(
+                            func.relu(
+                                self.dense1(x)
+                            )
+                        )
+                    )
+                )
+            )
+        )
         return logits
+
 
 if __name__ == "__main__":
     pass

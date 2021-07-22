@@ -1,7 +1,7 @@
 # from torch import std
 from torch.utils.data import DataLoader, random_split
 from torchvision import transforms
-from torchvision.transforms import ToTensor
+# from torchvision.transforms import ToTensor
 from torchvision import datasets
 import random
 import numpy as np
@@ -13,15 +13,17 @@ from mcy_client import Client
 # setting
 clientNum = 20              # the number of clients
 partRate = 0.8              # participation rate
-batch_size = 64
-Epoch = 30
+batch_size = 64             # batch size
+Epoch = 30                  # number of training epochs
 
 # init the roles of FL
-model = CNNModel()
-server = Server(model)
-clients = []
+# model = CNNModel()          # convolutional neural network
+model = LinearModel()       # linear regression
+server = Server(model)      # Parameter Server (PS) architecture
+clients = []                # Clients, or "Workers"
 
 transform = transforms.Compose([
+    # reference: https://blog.csdn.net/wangkaidehao/article/details/104520022/
     transforms.ToTensor(),
     transforms.Normalize(mean=(0.5,), std=(0.5,))
 ])
@@ -33,7 +35,7 @@ def initClients():
         root="data",
         train=True,
         download=True,
-        transform=transform,
+        transform=transform,        # transform (aforementioned)
     )
     length = len(training_data)//clientNum      # '//' --> exact division --> can be replaced by 'round(x/y)'
     training_data = random_split(training_data, [length]*clientNum)
