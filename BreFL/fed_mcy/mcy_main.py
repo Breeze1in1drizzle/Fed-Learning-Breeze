@@ -9,6 +9,7 @@ from mcy_model import CNNModel, LinearModel
 from mcy_server import Server
 from mcy_client import Client
 
+
 # setting
 clientNum = 20              # the number of clients
 partRate = 0.8              # participation rate
