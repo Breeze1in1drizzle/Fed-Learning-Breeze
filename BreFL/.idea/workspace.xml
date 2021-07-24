@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mnistProcessor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../mypyworkspace/MindLink-HeartCare" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -165,6 +165,8 @@
       <workItem from="1626852086159" duration="1519000" />
       <workItem from="1626854284821" duration="7025000" />
       <workItem from="1626916930922" duration="10810000" />
+      <workItem from="1627009360219" duration="4401000" />
+      <workItem from="1627090470942" duration="37000" />
     </task>
     <servers />
   </component>
