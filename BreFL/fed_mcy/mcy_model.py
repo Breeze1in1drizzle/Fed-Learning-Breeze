@@ -7,7 +7,7 @@ class LinearModel(nn.Module):
 
     def __init__(self) -> None:
         super(LinearModel, self).__init__()
-        self.flatten = nn.Flatten()
+        self.flatten = nn.Flatten()     # torch == 1.0.0  no this function nn.Flatten()
         # self.flatten = torch
         self.linear_relu_stack = nn.Sequential(
             nn.Linear(28*28, 512),
