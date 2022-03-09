@@ -14,8 +14,27 @@
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1vl2ifo1KLNXrcW7CAl9UZnAjP1" />
   <component name="ProjectViewState">
@@ -26,10 +45,37 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../kylin_FL_materials/edge_FL_framework/edge-federated" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MindLink-Explorer" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.ptdist">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myworkspace\github_workspace\Fed-Learning-Breeze\MultiProcessPyTorch" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.__init__">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Fed-Learning-Breeze" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MultiProcessPyTorch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MultiProcessPyTorch/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mcy_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Fed-Learning-Breeze" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,8 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ptdist" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.mcy_main" />
+        <item itemvalue="Python.ptdist" />
       </list>
     </recent_temporary>
   </component>
@@ -109,6 +156,16 @@
       <workItem from="1634923238368" duration="875000" />
       <workItem from="1634926214221" duration="563000" />
       <workItem from="1635316403652" duration="18000" />
+      <workItem from="1645176393721" duration="2078000" />
+      <workItem from="1645421947288" duration="1969000" />
+      <workItem from="1645511120034" duration="926000" />
+      <workItem from="1645668063197" duration="1194000" />
+      <workItem from="1645675574801" duration="1179000" />
+      <workItem from="1645753504672" duration="1457000" />
+      <workItem from="1646109668713" duration="6949000" />
+      <workItem from="1646305979011" duration="707000" />
+      <workItem from="1646627011868" duration="9439000" />
+      <workItem from="1646708110181" duration="10740000" />
     </task>
     <servers />
   </component>
@@ -116,7 +173,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Fed_Learning_Breeze$mcy_main.coverage" NAME="mcy_main Coverage Results" MODIFIED="1630936081199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BreFL/fed_mcy" />
+    <SUITE FILE_PATH="coverage/Fed_Learning_Breeze$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1646718557790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MultiProcessPyTorch" />
+    <SUITE FILE_PATH="coverage/Fed_Learning_Breeze$mcy_main.coverage" NAME="mcy_main Coverage Results" MODIFIED="1645177247360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BreFL/fed_mcy" />
     <SUITE FILE_PATH="coverage/Fed_Learning_Breeze$ptdist.coverage" NAME="ptdist Coverage Results" MODIFIED="1634926677973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BreFL/test" />
   </component>
 </project>

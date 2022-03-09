@@ -1,3 +1,7 @@
+'''
+提供 DNN Models
+'''
+
 import torch
 from torch import nn
 import torch.nn.functional as func
@@ -52,14 +56,7 @@ class CNNModel(nn.Module):
                 func.relu(
                     self.dense2(
                         self.drop1(
-                            func.relu(
-                                self.dense1(x)
-                            )
-                        )
-                    )
-                )
-            )
-        )
+                            func.relu(self.dense1(x)))))))
         return logits
 
 
